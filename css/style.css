@@ -1,0 +1,225 @@
+
+nav.sticky{position:fixed;top:0;}
+
+@media only screen and (max-width: 760px),
+(min-device-width: 802px) and (max-device-width: 1020px) {
+
+    /* Force table to not be like tables anymore */
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+
+
+    }
+
+    .empty {
+        display: none;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    th {
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        border: 1px solid #ccc;
+
+    }
+
+    td {
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+
+
+    }
+
+    /*
+    Label the data
+    */
+    td:nth-of-type(1):before {
+        content: "Sunday";
+
+    }
+    td:nth-of-type(2):before {
+        content: "Monday";
+    }
+    td:nth-of-type(3):before {
+        content: "Tuesday";
+    }
+    td:nth-of-type(4):before {
+        content: "Wednesday";
+    }
+    td:nth-of-type(5):before {
+        content: "Thursday";
+    }
+    td:nth-of-type(6):before {
+        content: "Friday";
+    }
+    td:nth-of-type(7):before {
+        content: "Saturday";
+    }
+
+
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    body {
+        padding: 0;
+        margin: 0;
+
+    }
+}
+
+/* iPads (portrait and landscape) ----------- */
+
+@media only screen and (min-device-width: 802px) and (max-device-width: 1020px) {
+    body {
+        width: 495px;
+
+    }
+}
+
+@media (min-width:641px) {
+    table {
+        table-layout: fixed;
+        background:rgb(165,181,177);
+        width: auto;
+
+
+    }
+    td {
+        width: auto;
+        background:white;
+        padding: 0 10px;
+    }
+}
+
+
+.row{
+    margin-top: 20px;
+}
+
+.today{
+    background: rgb(197,228,215);
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ffffff;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Sora', sans-serif;
+}
+
+nav.sticky{position:fixed;top:0;}
+
+nav a {
+    color:white;
+    text-decoration:none;
+
+}
+
+
+h1 {
+    position: absolute;
+    top: 50%;
+    transform:translateY(-50%);
+    text-align:center;
+    font-size: 1em;
+    color: #fff;
+    text-transform: uppercase;
+    mix-blend-mode: overlay;
+    text-shadow: 0 5px 10px rgba(0,0,0,1);
+
+}
+
+h2 {
+    margin-top: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:normal;
+    text-align: center;
+}
+
+
+
+h3 {
+    margin-top: 4px;
+    margin-left: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:normal;
+}
+
+
+
+nav {
+    background-color: rgb(49,82,70);
+    display:flex;
+    justify-content:space-evenly;
+    width: 100vw;
+}
+
+nav div {
+    padding:8px;
+    background-color: rgb(49,82,70);
+}
+
+
+
+header {
+
+
+}
+
+section {
+    max-width:1000px;
+    margin-left: 260px ;
+
+}
+
+form {
+    text-align: center;
+}
+
+
+footer {
+    background-color: rgb(49, 82, 70);
+    height: 3px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+
+
+
+
